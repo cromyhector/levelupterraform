@@ -24,8 +24,7 @@ resource "aws_dynamodb_table" "sneakers_table" {
 
   global_secondary_index {
     name               = "Sneakers_GSI"
-    hash_key           = "BrandName"
-    range_key          = "ModelNumber"
+    hash_key           = "ModelNumber"
     write_capacity     = 10
     read_capacity      = 10
     projection_type    = "ALL"
